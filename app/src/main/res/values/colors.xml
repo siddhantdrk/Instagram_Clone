@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--    UI colors-->
+    <color name="primaryColor">#191720</color>
+    <color name="accentColor">#FF9300</color>
+    <color name="inputFieldBorderColor">#383740</color>
+    <color name="inputFieldTextColor">#A6A8AA</color>
 </resources>

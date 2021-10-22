@@ -9,13 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InstagramClone">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.ResetPasswordActivity"></activity>
+        <activity android:name=".ui.ForgotPasswordActivity" />
+        <activity android:name=".ui.UserProfileActivity" />
+        <activity
+            android:name=".ui.ConfirmationCodeActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.SignUpOptionsActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/splashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

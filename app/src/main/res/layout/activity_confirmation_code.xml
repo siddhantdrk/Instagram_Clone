@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:padding="28dp"
+    tools:context=".ui.ConfirmationCodeActivity">
+
+    <ImageView
+        android:id="@+id/backIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/lexendregular"
+        android:gravity="center"
+        android:text="@string/enter_6_digit_verification_code_sent_to_your_phone"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backIv" />
+
+    <LinearLayout
+        android:id="@+id/optCodeHll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/codeDigit1Et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/inputFieldBorderColor"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:theme="@style/whiteTieTheme"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/codeDigit2Et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/inputFieldBorderColor"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:theme="@style/whiteTieTheme"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/codeDigit3Et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/inputFieldBorderColor"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:theme="@style/whiteTieTheme"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/codeDigit4Et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/inputFieldBorderColor"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:theme="@style/whiteTieTheme"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/codeDigit5Et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/inputFieldBorderColor"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:theme="@style/whiteTieTheme"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/codeDigit6Et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/inputFieldBorderColor"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:theme="@style/whiteTieTheme"
+            tools:ignore="Autofill,LabelFor" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resentCodeInHll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optCodeHll">
+
+        <TextView
+            android:id="@+id/resendCodeInTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexendregular"
+            android:text="@string/resend_code_in"
+            android:textColor="@color/inputFieldTextColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/resendCodeInTimerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/lexendregular"
+            android:text="00:39"
+            android:textColor="@color/inputFieldTextColor"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextMb"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/accentColor"
+        android:fontFamily="@font/lexenddecaregular"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resentCodeInHll"
+        app:layout_constraintVertical_bias="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
