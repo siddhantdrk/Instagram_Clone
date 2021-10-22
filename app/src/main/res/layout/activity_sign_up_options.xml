@@ -83,21 +83,49 @@
 
             </com.google.android.material.tabs.TabLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/phoneNumberTie"
+            <LinearLayout
+                android:id="@+id/phoneNumberHll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:backgroundTint="@color/inputFieldBorderColor"
-                android:fontFamily="@font/lexendregular"
-                android:hint="@string/phone_number"
-                android:inputType="phone"
-                android:paddingBottom="32dp"
-                android:textColor="@color/inputFieldTextColor"
-                android:textColorHint="@color/inputFieldTextColor"
-                android:textSize="16sp"
-                android:theme="@style/inputFieldTextColorTieTheme"
-                android:visibility="visible" />
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneCodeTie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/inputFieldBorderColor"
+                    android:fontFamily="@font/lexendregular"
+                    android:gravity="center"
+                    android:hint="+91"
+                    android:inputType="textPhonetic"
+                    android:paddingBottom="32dp"
+                    android:textColor="@color/inputFieldTextColor"
+                    android:textColorHint="@color/inputFieldTextColor"
+                    android:textSize="16sp"
+                    android:theme="@style/inputFieldTextColorTieTheme"
+                    android:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNumberTie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:layout_weight="5"
+                    android:backgroundTint="@color/inputFieldBorderColor"
+                    android:fontFamily="@font/lexendregular"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:paddingBottom="32dp"
+                    android:textColor="@color/inputFieldTextColor"
+                    android:textColorHint="@color/inputFieldTextColor"
+                    android:textSize="16sp"
+                    android:theme="@style/inputFieldTextColorTieTheme"
+                    android:visibility="visible" />
+
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailTie"
