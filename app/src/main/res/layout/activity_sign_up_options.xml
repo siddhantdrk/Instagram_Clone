@@ -15,8 +15,8 @@
             android:id="@+id/logoIv"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginHorizontal="96dp"
-            android:layout_marginTop="96dp"
+            android:layout_marginHorizontal="@dimen/_76sdp"
+            android:layout_marginTop="@dimen/_76sdp"
             android:src="@drawable/sign_up_logo"
             app:layout_constraintDimensionRatio="200:129"
             app:layout_constraintEnd_toEndOf="parent"
@@ -28,17 +28,20 @@
             android:id="@+id/inputFieldsVll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="@dimen/_54sdp"
+            android:minHeight="@dimen/_420sdp"
             android:background="@drawable/profile_page_vll_background"
             android:orientation="vertical"
-            android:padding="28dp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingTop="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logoIv">
 
             <View
-                android:layout_width="150dp"
-                android:layout_height="3dp"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_3sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/white" />
 
@@ -46,19 +49,19 @@
                 android:id="@+id/signUpOptionsTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="@dimen/_48sdp"
                 android:fontFamily="@font/lexenddecaregular"
                 android:gravity="center"
-                android:text="Sign Up With Below Options"
+                android:text="@string/sign_up_with_below_options"
                 android:textColor="@color/white"
-                android:textSize="21sp" />
+                android:textSize="@dimen/_18ssp" />
 
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/signUpOptionsTbl"
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:layout_marginTop="32dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginTop="@dimen/_24sdp"
                 android:background="@drawable/sign_up_tab_layout_background"
                 app:tabBackground="@drawable/sign_up_tabs_background"
                 app:tabIndicatorColor="@android:color/transparent"
@@ -93,18 +96,18 @@
                     android:id="@+id/phoneCodeTie"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="48dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="@dimen/_36sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/inputFieldBorderColor"
                     android:fontFamily="@font/lexendregular"
                     android:gravity="center"
-                    android:hint="+91"
+                    android:hint="@string/_91"
                     android:inputType="textPhonetic"
-                    android:paddingBottom="32dp"
+                    android:paddingBottom="@dimen/_20sdp"
                     android:textColor="@color/inputFieldTextColor"
                     android:textColorHint="@color/inputFieldTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/_12ssp"
                     android:theme="@style/inputFieldTextColorTieTheme"
                     android:visibility="visible" />
 
@@ -112,16 +115,16 @@
                     android:id="@+id/phoneNumberTie"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="48dp"
+                    android:layout_marginTop="@dimen/_36sdp"
                     android:layout_weight="5"
                     android:backgroundTint="@color/inputFieldBorderColor"
                     android:fontFamily="@font/lexendregular"
                     android:hint="@string/phone_number"
                     android:inputType="phone"
-                    android:paddingBottom="32dp"
+                    android:paddingBottom="@dimen/_20sdp"
                     android:textColor="@color/inputFieldTextColor"
                     android:textColorHint="@color/inputFieldTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/_12ssp"
                     android:theme="@style/inputFieldTextColorTieTheme"
                     android:visibility="visible" />
 
@@ -131,29 +134,29 @@
                 android:id="@+id/emailTie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="@dimen/_36sdp"
                 android:backgroundTint="@color/inputFieldBorderColor"
                 android:fontFamily="@font/lexendregular"
                 android:hint="@string/e_mail_address"
                 android:inputType="textEmailAddress"
-                android:paddingBottom="32dp"
+                android:paddingBottom="@dimen/_20sdp"
                 android:textColor="@color/inputFieldTextColor"
                 android:textColorHint="@color/inputFieldTextColor"
-                android:textSize="16sp"
+                android:textSize="@dimen/_12ssp"
                 android:visibility="gone" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/nextMb"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginBottom="24dp"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
                 android:backgroundTint="@color/accentColor"
                 android:fontFamily="@font/lexenddecaregular"
                 android:text="@string/next"
                 android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp" />
+                android:textSize="@dimen/_16ssp"
+                app:cornerRadius="@dimen/_10sdp" />
 
         </LinearLayout>
 

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryColor"
-    android:paddingTop="28dp"
+    android:paddingTop="@dimen/_16sdp"
     tools:context=".ui.UserProfileActivity">
 
     <ImageView
         android:id="@+id/backIv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="@dimen/_16sdp"
         android:src="@drawable/ic_back_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,7 +27,7 @@
         android:gravity="center"
         android:text="@string/profile_page"
         android:textColor="@color/white"
-        android:textSize="21sp"
+        android:textSize="@dimen/_18ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_12sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,10 +47,10 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/photoCiv"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
                 android:layout_marginHorizontal="28dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="@dimen/_36sdp"
                 android:background="@drawable/upload_photo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,12 +60,12 @@
                 android:id="@+id/uploadPhotoTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="28dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_24sdp"
                 android:fontFamily="@font/lexenddecaregular"
                 android:text="@string/upload_photo"
                 android:textColor="@color/white"
-                android:textSize="21sp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/photoCiv" />
@@ -74,19 +74,19 @@
                 android:id="@+id/inputFieldsVll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="@dimen/_36sdp"
                 android:background="@drawable/profile_page_vll_background"
                 android:orientation="vertical"
-                android:paddingHorizontal="28dp"
-                android:paddingTop="28dp"
-                android:paddingBottom="56dp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:paddingTop="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_48sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/uploadPhotoTv">
 
                 <View
-                    android:layout_width="150dp"
-                    android:layout_height="3dp"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_3sdp"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/white" />
 
@@ -94,7 +94,7 @@
                     android:id="@+id/userIdRl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="@dimen/_24sdp"
                     android:background="@drawable/input_fields_background"
                     android:orientation="horizontal">
 
@@ -104,17 +104,17 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_profile"
                         tools:ignore="ContentDescription" />
 
                     <View
                         android:id="@+id/userIdDivider"
-                        android:layout_width="1dp"
-                        android:layout_height="60dp"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_48sdp"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="@dimen/_48sdp"
                         android:background="@color/inputFieldBorderColor" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -122,7 +122,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:layout_toEndOf="@id/userIdDivider"
                         android:backgroundTint="@android:color/transparent"
                         android:fontFamily="@font/lexendregular"
@@ -131,7 +131,7 @@
                         android:maxLines="1"
                         android:textColor="@color/inputFieldTextColor"
                         android:textColorHint="@color/inputFieldTextColor"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/_12ssp"
                         android:theme="@style/inputFieldTextColorTieTheme" />
 
                 </RelativeLayout>
@@ -140,7 +140,7 @@
                     android:id="@+id/nameRl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="@dimen/_24sdp"
                     android:background="@drawable/input_fields_background"
                     android:orientation="horizontal">
 
@@ -150,17 +150,17 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_profile"
                         tools:ignore="ContentDescription" />
 
                     <View
                         android:id="@+id/nameDivider"
-                        android:layout_width="1dp"
-                        android:layout_height="60dp"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_48sdp"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="@dimen/_48sdp"
                         android:background="@color/inputFieldBorderColor" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -168,7 +168,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:layout_toEndOf="@id/nameDivider"
                         android:backgroundTint="@android:color/transparent"
                         android:fontFamily="@font/lexendregular"
@@ -177,7 +177,7 @@
                         android:maxLines="1"
                         android:textColor="@color/inputFieldTextColor"
                         android:textColorHint="@color/inputFieldTextColor"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/_12ssp"
                         android:theme="@style/inputFieldTextColorTieTheme" />
 
                 </RelativeLayout>
@@ -186,7 +186,7 @@
                     android:id="@+id/genderRl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="@dimen/_24sdp"
                     android:background="@drawable/input_fields_background"
                     android:orientation="horizontal">
 
@@ -203,10 +203,10 @@
 
                     <View
                         android:id="@+id/genderDivider"
-                        android:layout_width="1dp"
-                        android:layout_height="60dp"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_48sdp"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="@dimen/_48sdp"
                         android:background="@color/inputFieldBorderColor" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -214,7 +214,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:layout_toEndOf="@id/genderDivider"
                         android:backgroundTint="@android:color/transparent"
                         android:fontFamily="@font/lexendregular"
@@ -223,7 +223,7 @@
                         android:maxLines="1"
                         android:textColor="@color/inputFieldTextColor"
                         android:textColorHint="@color/inputFieldTextColor"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/_12ssp"
                         android:theme="@style/inputFieldTextColorTieTheme" />
 
                 </RelativeLayout>
@@ -233,7 +233,7 @@
                     android:id="@+id/contactRl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="@dimen/_24sdp"
                     android:background="@drawable/input_fields_background"
                     android:orientation="horizontal">
 
@@ -243,7 +243,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_contact_details"
                         tools:ignore="ContentDescription" />
@@ -251,9 +251,9 @@
                     <View
                         android:id="@+id/contactDivider"
                         android:layout_width="1dp"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/_48sdp"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="@dimen/_48sdp"
                         android:background="@color/inputFieldBorderColor" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -261,7 +261,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:layout_toEndOf="@id/contactDivider"
                         android:backgroundTint="@android:color/transparent"
                         android:fontFamily="@font/lexendregular"
@@ -270,7 +270,7 @@
                         android:maxLines="1"
                         android:textColor="@color/inputFieldTextColor"
                         android:textColorHint="@color/inputFieldTextColor"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/_12ssp"
                         android:theme="@style/inputFieldTextColorTieTheme" />
 
                 </RelativeLayout>
@@ -280,7 +280,7 @@
                     android:id="@+id/emailRl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="@dimen/_24sdp"
                     android:background="@drawable/input_fields_background"
                     android:orientation="horizontal">
 
@@ -290,17 +290,17 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_contact_details"
                         tools:ignore="ContentDescription" />
 
                     <View
                         android:id="@+id/emailDivider"
-                        android:layout_width="1dp"
-                        android:layout_height="60dp"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_48sdp"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="@dimen/_48sdp"
                         android:background="@color/inputFieldBorderColor" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -308,7 +308,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:layout_toEndOf="@id/emailDivider"
                         android:backgroundTint="@android:color/transparent"
                         android:fontFamily="@font/lexendregular"
@@ -317,7 +317,7 @@
                         android:maxLines="1"
                         android:textColor="@color/inputFieldTextColor"
                         android:textColorHint="@color/inputFieldTextColor"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/_12ssp"
                         android:theme="@style/inputFieldTextColorTieTheme" />
 
                 </RelativeLayout>
@@ -327,7 +327,7 @@
                     android:id="@+id/passwordRl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="@dimen/_24sdp"
                     android:background="@drawable/input_fields_background"
                     android:orientation="horizontal">
 
@@ -337,17 +337,17 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_password"
                         tools:ignore="ContentDescription" />
 
                     <View
                         android:id="@+id/passwordDivider"
-                        android:layout_width="1dp"
-                        android:layout_height="60dp"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_48sdp"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="@dimen/_48sdp"
                         android:background="@color/inputFieldBorderColor" />
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -355,7 +355,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
                         android:layout_toEndOf="@id/passwordDivider"
                         android:backgroundTint="@android:color/transparent"
                         android:fontFamily="@font/lexendregular"
@@ -364,7 +364,7 @@
                         android:maxLines="1"
                         android:textColor="@color/inputFieldTextColor"
                         android:textColorHint="@color/inputFieldTextColor"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/_12ssp"
                         android:theme="@style/inputFieldTextColorTieTheme" />
 
                 </RelativeLayout>
@@ -372,21 +372,21 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/signInMb"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="80dp"
+                    android:layout_height="@dimen/_54sdp"
+                    android:layout_marginTop="@dimen/_54sdp"
                     android:backgroundTint="@color/accentColor"
                     android:fontFamily="@font/lexenddecaregular"
                     android:text="@string/sign_up"
                     android:textAllCaps="false"
-                    android:textSize="21sp"
-                    app:cornerRadius="10dp" />
+                    android:textSize="@dimen/_16ssp"
+                    app:cornerRadius="@dimen/_10sdp" />
 
 
                 <LinearLayout
                     android:id="@+id/dontHaveAccountHll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginTop="@dimen/_16sdp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -398,18 +398,18 @@
                         android:gravity="center"
                         android:text="@string/already_have_an_account"
                         android:textColor="@color/inputFieldTextColor"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_10ssp" />
 
                     <TextView
                         android:id="@+id/SignInTv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
+                        android:layout_marginStart="@dimen/_3sdp"
                         android:fontFamily="@font/lexenddecaregular"
                         android:gravity="center"
                         android:text="@string/sign_in"
                         android:textColor="#FF9300"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
