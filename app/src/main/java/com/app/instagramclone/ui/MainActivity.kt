@@ -1,8 +1,9 @@
-package com.app.instagramclone
+package com.app.instagramclone.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.app.instagramclone.ui.*
+import com.app.instagramclone.R
+import com.app.instagramclone.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

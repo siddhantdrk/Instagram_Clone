@@ -21,7 +21,7 @@
             android:id="@+id/topItemIv"
             android:layout_width="@dimen/_64sdp"
             android:layout_height="@dimen/_88sdp"
-            android:background="@drawable/ic_launcher_background"
+            android:background="@drawable/top_rv_item_img"
             tools:ignore="ContentDescription" />
 
     </com.google.android.material.card.MaterialCardView>

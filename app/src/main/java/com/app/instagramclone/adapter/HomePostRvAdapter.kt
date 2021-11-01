@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.app.instagramclone.R
-import com.app.instagramclone.ui.ReportBottomSheetFragment
+import com.app.instagramclone.fragment.ReportBottomSheetFragment
 import kotlinx.android.synthetic.main.more_pop_up_dialogue_layout.view.*
 import kotlinx.android.synthetic.main.post_rv_item.view.*
 

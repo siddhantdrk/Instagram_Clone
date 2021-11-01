@@ -1,4 +1,4 @@
-package com.app.instagramclone.ui
+package com.app.instagramclone.fragment
 
 import android.graphics.Color
 import android.os.Bundle

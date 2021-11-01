@@ -1,4 +1,4 @@
-package com.app.instagramclone.ui
+package com.app.instagramclone.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.app.instagramclone.R
-import com.app.instagramclone.adapter.HomePostRvAdapter
-import com.app.instagramclone.adapter.HomeTopRvAdapter
-import kotlinx.android.synthetic.main.fragment_home.view.*
+import com.app.instagramclone.adapter.SearchResultRvAdapter
+import kotlinx.android.synthetic.main.fragment_search.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,10 +18,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
+ * Use the [SearchFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HomeFragment : Fragment() {
+class SearchFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -40,12 +39,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val v = inflater.inflate(R.layout.fragment_home, container, false)
-        v.topRv.layoutManager =
-            LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
-        v.topRv.adapter = HomeTopRvAdapter()
-        v.postRv.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
-        v.postRv.adapter = HomePostRvAdapter()
+        val v = inflater.inflate(R.layout.fragment_search, container, false)
+        v.searchResultRv.layoutManager =
+            LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
+        v.searchResultRv.adapter = SearchResultRvAdapter()
         return v
     }
 
@@ -56,12 +53,12 @@ class HomeFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
+         * @return A new instance of fragment SearchFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
+            SearchFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
