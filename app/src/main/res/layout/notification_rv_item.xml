@@ -20,9 +20,31 @@
             android:id="@+id/profileIv"
             android:layout_width="@dimen/_42sdp"
             android:layout_height="@dimen/_42sdp"
+            app:civ_circle_background_color="#191720"
             android:src="@drawable/follow_request_rv_item_profile_img"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/notificationTypeCv"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#191720"
+            app:cardCornerRadius="@dimen/_21sdp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/inputFieldBorderColor"
+            app:strokeWidth="@dimen/_1sdp">
+
+            <ImageView
+                android:id="@+id/notificationTypeIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </com.google.android.material.card.MaterialCardView>
 
 
         <TextView

@@ -43,6 +43,7 @@ class NotificationFragment : Fragment() {
         v.notificationRv.layoutManager =
             LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
         v.notificationRv.adapter = NotificationRvAdapter()
+        v.notificationRv.setHasFixedSize(true)
         return v
     }
 

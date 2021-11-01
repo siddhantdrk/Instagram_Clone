@@ -57,4 +57,11 @@
     <string name="New">New</string>
     <string name="accept">Accept</string>
     <string name="reject">Reject</string>
+    <string name="Profile">Profile</string>
+    <string name="posts">Posts</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="Home">Home</string>
+    <string name="video">Video</string>
+    <string name="pics">Pics</string>
 </resources>
