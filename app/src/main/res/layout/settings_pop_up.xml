@@ -6,7 +6,7 @@
     android:background="@drawable/more_pop_up_bg">
 
     <TextView
-        android:id="@+id/unfollowTv"
+        android:id="@+id/myProfileTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
@@ -14,7 +14,7 @@
         android:focusable="true"
         android:fontFamily="@font/ibm_plex_mono_medium"
         android:padding="@dimen/_16sdp"
-        android:text="@string/unfollow"
+        android:text="@string/my_profile"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,10 +28,10 @@
         android:background="#383740"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/unfollowTv" />
+        app:layout_constraintTop_toBottomOf="@id/myProfileTv" />
 
     <TextView
-        android:id="@+id/reportTv"
+        android:id="@+id/termsTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
@@ -39,7 +39,7 @@
         android:focusable="true"
         android:fontFamily="@font/ibm_plex_mono_medium"
         android:padding="@dimen/_16sdp"
-        android:text="@string/report"
+        android:text="@string/terms_of_use"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,10 +53,10 @@
         android:background="#383740"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportTv" />
+        app:layout_constraintTop_toBottomOf="@id/termsTv" />
 
     <TextView
-        android:id="@+id/shareTv"
+        android:id="@+id/privacyPolicyTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
@@ -64,7 +64,7 @@
         android:focusable="true"
         android:fontFamily="@font/ibm_plex_mono_medium"
         android:padding="@dimen/_16sdp"
-        android:text="@string/share_to"
+        android:text="@string/privacy_policy"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,10 +78,10 @@
         android:background="#383740"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/shareTv" />
+        app:layout_constraintTop_toBottomOf="@id/privacyPolicyTv" />
 
     <TextView
-        android:id="@+id/hideTv"
+        android:id="@+id/aboutTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
@@ -89,12 +89,37 @@
         android:focusable="true"
         android:fontFamily="@font/ibm_plex_mono_medium"
         android:padding="@dimen/_16sdp"
-        android:text="@string/hide"
+        android:text="@string/about"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hDiv3" />
+
+    <View
+        android:id="@+id/hDiv4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#383740"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutTv" />
+
+    <TextView
+        android:id="@+id/logoutTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:padding="@dimen/_16sdp"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hDiv4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,10 @@
 package com.app.instagramclone.fragment
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import android.widget.PopupWindow
 import androidx.fragment.app.Fragment
 import com.app.instagramclone.R
 import com.app.instagramclone.adapter.ProfileVpAdapter
@@ -60,6 +60,16 @@ class ProfileFragment : Fragment() {
             startActivity(Intent(context, EditProfileActivity::class.java))
         }
 
+        v.settingsIv.setOnClickListener {
+            val settingsPopUp = showAlertFilter(this.requireContext())
+            settingsPopUp.isOutsideTouchable = true
+            if (!settingsPopUp.isShowing) {
+                settingsPopUp.showAsDropDown(v.settingsIv, 0, 48, Gravity.END)
+                dimBehind(settingsPopUp)
+            }
+        }
+
+
         return v
     }
 
@@ -81,5 +91,22 @@ class ProfileFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun showAlertFilter(context: Context): PopupWindow {
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val view = inflater.inflate(R.layout.settings_pop_up, null)
+        return PopupWindow(view, 640, ViewGroup.LayoutParams.WRAP_CONTENT)
+    }
+
+
+    private fun dimBehind(popupWindow: PopupWindow) {
+        val container = popupWindow.contentView.rootView
+        val context = popupWindow.contentView.context
+        val wm = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+        val p = container.layoutParams as WindowManager.LayoutParams
+        p.flags = p.flags or WindowManager.LayoutParams.FLAG_DIM_BEHIND
+        p.dimAmount = 0.9f
+        wm.updateViewLayout(container, p)
     }
 }

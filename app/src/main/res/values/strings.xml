@@ -73,4 +73,9 @@
     <string name="email_address">Email Address</string>
     <string name="dummy_gmail_com">dummy@gmail.com</string>
     <string name="save">Save</string>
+    <string name="my_profile">My Profile</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
 </resources>
