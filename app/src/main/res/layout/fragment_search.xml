@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryColor"
-    tools:context=".ui.SearchFragment">
+    tools:context=".fragment.SearchFragment">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/searchTie"
@@ -46,6 +46,7 @@
         android:fontFamily="@font/ibm_plex_mono_medium"
         android:gravity="start|center_vertical"
         android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         android:text="@string/search_by_username"
         android:textAllCaps="false"
         android:textSize="@dimen/_12ssp"
@@ -69,6 +70,7 @@
         android:fontFamily="@font/ibm_plex_mono_medium"
         android:gravity="start|center_vertical"
         android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         android:text="@string/search_by"
         android:textAllCaps="false"
         android:textSize="@dimen/_12ssp"
