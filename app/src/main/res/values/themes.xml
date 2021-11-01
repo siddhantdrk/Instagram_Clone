@@ -33,7 +33,7 @@
     <style name="whiteTieTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <item name="colorControlActivated">@color/white</item>
         <item name="colorControlHighlight">@color/white</item>
-        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlNormal">@color/inputFieldBorderColor</item>
     </style>
 
     <style name="myTabTextStyle" parent="TextAppearance.AppCompat">

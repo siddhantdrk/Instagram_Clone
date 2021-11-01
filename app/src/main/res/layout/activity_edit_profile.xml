@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:paddingTop="@dimen/_16sdp"
+    tools:context=".ui.EditProfileActivity">
+
+    <ImageView
+        android:id="@+id/backIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/profilePageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="72dp"
+        android:fontFamily="@font/lexendregular"
+        android:gravity="center"
+        android:text="@string/profile_page"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilePageTv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_16sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoCiv"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="@dimen/_36sdp"
+                android:background="@drawable/upload_photo" />
+
+            <TextView
+                android:id="@+id/editTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_54sdp"
+                android:fontFamily="@font/lexenddecaregular"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_12sdp"
+                android:fontFamily="@font/lexendregular"
+                android:gravity="center_vertical"
+                android:text="@string/User_Id"
+                android:textColor="@color/inputFieldTextColor"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_profile" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userIdTie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexendregular"
+                android:hint="@string/User_Id"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:theme="@style/whiteTieTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                android:fontFamily="@font/lexendregular"
+                android:gravity="center_vertical"
+                android:text="@string/Name"
+                android:textColor="@color/inputFieldTextColor"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_profile" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameTie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexendregular"
+                android:hint="@string/jenny_watsaon"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:theme="@style/whiteTieTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                android:fontFamily="@font/lexendregular"
+                android:gravity="center_vertical"
+                android:text="@string/gender"
+                android:textColor="@color/inputFieldTextColor"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_profile" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/genderTie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexendregular"
+                android:hint="@string/female"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:theme="@style/whiteTieTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                android:fontFamily="@font/lexendregular"
+                android:gravity="center_vertical"
+                android:text="@string/contact_detail"
+                android:textColor="@color/inputFieldTextColor"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_contact_details" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactTie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexendregular"
+                android:hint="@string/contact_details"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:theme="@style/whiteTieTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                android:fontFamily="@font/lexendregular"
+                android:gravity="center_vertical"
+                android:text="@string/email_address"
+                android:textColor="@color/inputFieldTextColor"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_profile" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailTie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:fontFamily="@font/lexendregular"
+                android:hint="@string/dummy_gmail_com"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:theme="@style/whiteTieTheme" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signInMb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_24sdp"
+                android:backgroundTint="@color/accentColor"
+                android:fontFamily="@font/lexenddecaregular"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_16ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTv" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

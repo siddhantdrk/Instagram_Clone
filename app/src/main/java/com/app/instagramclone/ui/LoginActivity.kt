@@ -16,5 +16,8 @@ class LoginActivity : AppCompatActivity() {
         forgotPasswordTv.setOnClickListener {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
+        signInMb.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 }

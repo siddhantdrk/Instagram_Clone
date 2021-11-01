@@ -1,5 +1,6 @@
 package com.app.instagramclone.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.app.instagramclone.R
 import com.app.instagramclone.adapter.ProfileVpAdapter
+import com.app.instagramclone.ui.EditProfileActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
@@ -53,6 +55,11 @@ class ProfileFragment : Fragment() {
                 }
             }
         }.attach()
+
+        v.editIv.setOnClickListener {
+            startActivity(Intent(context, EditProfileActivity::class.java))
+        }
+
         return v
     }
 

@@ -64,4 +64,13 @@
     <string name="Home">Home</string>
     <string name="video">Video</string>
     <string name="pics">Pics</string>
+    <string name="edit">Edit</string>
+    <string name="User_Id">User Id</string>
+    <string name="Name">Name</string>
+    <string name="jenny_watsaon">Jenny watsaon</string>
+    <string name="female">Female</string>
+    <string name="contact_detail">Contact Detail</string>
+    <string name="email_address">Email Address</string>
+    <string name="dummy_gmail_com">dummy@gmail.com</string>
+    <string name="save">Save</string>
 </resources>
