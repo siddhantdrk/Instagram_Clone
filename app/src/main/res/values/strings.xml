@@ -33,4 +33,28 @@
     <string name="your_new_password_must_be_different_from_previously_used_password">Your new password must be different from previously used password</string>
     <string name="sign_up_with_below_options">Sign Up With Below Options</string>
     <string name="_91">+91</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="camera">camera</string>
+    <string name="notification">notification</string>
+    <string name="profile">profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loop">LOOP</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="report">Report</string>
+    <string name="share_to">Share to...</string>
+    <string name="hide">Hide</string>
+    <string name="Search">Search</string>
+    <string name="why_are_you_reporting_this_post">Why are you reporting this post?</string>
+    <string name="it_s_spam">It’s Spam?</string>
+    <string name="false_information">False Information?</string>
+    <string name="i_just_don_t_like_it">I just don’t like it?</string>
+    <string name="search_by_username">Search by Username</string>
+    <string name="search_by">Search by #</string>
+    <string name="search_result">Search result</string>
+    <string name="Notification">Notification</string>
+    <string name="New">New</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
 </resources>
