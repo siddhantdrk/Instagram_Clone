@@ -19,7 +19,7 @@ class HomePostRvAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        holder.itemView.postProfileCiv.setOnClickListener {
+        holder.itemView.moreIv.setOnClickListener {
             Toast.makeText(holder.itemView.context, "more", Toast.LENGTH_SHORT).show()
             val morePopUp = showAlertFilter(holder.itemView.context)
             morePopUp.isOutsideTouchable = true
