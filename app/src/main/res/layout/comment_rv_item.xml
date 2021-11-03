@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_16sdp"
+    android:background="@color/primaryColor">
+
+    <TextView
+        android:id="@+id/userCommentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ibm_plex_mono_regular"
+        android:text="Userna Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... more "
+        android:textColor="@color/inputFieldTextColor"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/follow_request_rv_item_profile_img"
+        app:layout_constraintBottom_toBottomOf="@id/addCommentTie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/addCommentTie" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addCommentTie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/ibm_plex_mono_regular"
+        android:hint="@string/add_comment"
+        android:inputType="textMultiLine"
+        android:textColor="#999999"
+        android:textColorHint="#999999"
+        android:textSize="@dimen/_10ssp"
+        android:theme="@style/commentTieTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profileIv"
+        app:layout_constraintTop_toBottomOf="@+id/userCommentTv" />
+
+    <TextView
+        android:id="@+id/commentTimeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/ibm_plex_mono_regular"
+        android:text="10 minutes ago"
+        android:textColor="@color/inputFieldTextColor"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addCommentTie" />
+
+    <View
+        android:id="@+id/hDiv2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="#383740"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commentTimeTv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

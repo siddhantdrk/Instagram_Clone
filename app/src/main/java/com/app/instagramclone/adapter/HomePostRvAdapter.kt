@@ -1,6 +1,7 @@
 package com.app.instagramclone.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.*
 import android.widget.PopupWindow
 import android.widget.Toast
@@ -8,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.app.instagramclone.R
 import com.app.instagramclone.fragment.ReportBottomSheetFragment
+import com.app.instagramclone.ui.CommentActivity
 import kotlinx.android.synthetic.main.more_pop_up_dialogue_layout.view.*
 import kotlinx.android.synthetic.main.post_rv_item.view.*
 
@@ -41,6 +43,15 @@ class HomePostRvAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                     ReportBottomSheetFragment.TAG
                 )
             }
+        }
+
+        holder.itemView.commentIv.setOnClickListener {
+            holder.itemView.context.startActivity(
+                Intent(
+                    holder.itemView.context,
+                    CommentActivity::class.java
+                )
+            )
         }
     }
 
