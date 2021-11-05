@@ -24,9 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_16sdp"
         android:fontFamily="@font/ibm_plex_mono_medium"
-        android:text="Comment"
+        android:text="@string/comment"
         android:textColor="@color/white"
-        android:textSize="@dimen/_21ssp"
+        android:textSize="@dimen/_18ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/backIv"
         app:layout_constraintTop_toTopOf="parent" />

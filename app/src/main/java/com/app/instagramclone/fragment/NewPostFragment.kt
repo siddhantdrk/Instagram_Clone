@@ -5,7 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.app.instagramclone.R
+import com.app.instagramclone.adapter.NewPostRvAdapter
+import kotlinx.android.synthetic.main.fragment_new_post.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -14,10 +18,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [CameraFragment.newInstance] factory method to
+ * Use the [NewPostFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class CameraFragment : Fragment() {
+class NewPostFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +39,11 @@ class CameraFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_camera, container, false)
+        val v = inflater.inflate(R.layout.fragment_new_post, container, false)
+        v.new_post_rv.layoutManager =
+            GridLayoutManager(requireContext(), 3, RecyclerView.VERTICAL, false)
+        v.new_post_rv.adapter = NewPostRvAdapter()
+        return v
     }
 
     companion object {
@@ -50,7 +58,7 @@ class CameraFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            CameraFragment().apply {
+            NewPostFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

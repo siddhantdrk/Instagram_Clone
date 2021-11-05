@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.camera -> {
                     supportFragmentManager.beginTransaction().replace(
-                        R.id.mainContainerFl, CameraFragment()
+                        R.id.mainContainerFl, NewPostFragment()
                     )
                         .addToBackStack("Camera").commit()
                     true
