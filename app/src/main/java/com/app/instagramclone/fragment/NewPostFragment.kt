@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -43,6 +44,10 @@ class NewPostFragment : Fragment() {
         v.new_post_rv.layoutManager =
             GridLayoutManager(requireContext(), 3, RecyclerView.VERTICAL, false)
         v.new_post_rv.adapter = NewPostRvAdapter()
+        val list: List<String> = listOf("Choose Category", "Choose Category", "Choose Category")
+        v.chooseCategorySp.adapter = ArrayAdapter<CharSequence>(
+            requireContext(), android.R.layout.simple_spinner_item, list
+        )
         return v
     }
 

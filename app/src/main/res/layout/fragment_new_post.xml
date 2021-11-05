@@ -105,6 +105,8 @@
                 android:id="@+id/chooseCategorySp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:popupBackground="@color/primaryColor"
+                android:spinnerMode="dropdown"
                 android:layout_margin="@dimen/_16sdp"
                 android:background="@drawable/choose_category_spinner_bg"
                 android:entries="@array/category"
