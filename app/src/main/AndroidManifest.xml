@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InstagramClone">
-        <activity android:name=".ui.CommentActivity"></activity>
+        <activity android:name=".ui.PostDetailActivity"></activity>
+        <activity android:name=".ui.CommentActivity" />
         <activity android:name=".ui.EditProfileActivity" />
         <activity android:name=".ui.ResetPasswordActivity" />
         <activity android:name=".ui.ForgotPasswordActivity" />

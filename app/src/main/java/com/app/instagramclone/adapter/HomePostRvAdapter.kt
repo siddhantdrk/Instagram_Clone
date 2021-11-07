@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.instagramclone.R
 import com.app.instagramclone.fragment.ReportBottomSheetFragment
 import com.app.instagramclone.ui.CommentActivity
+import com.app.instagramclone.ui.PostDetailActivity
 import kotlinx.android.synthetic.main.more_pop_up_dialogue_layout.view.*
 import kotlinx.android.synthetic.main.post_rv_item.view.*
 
@@ -50,6 +51,15 @@ class HomePostRvAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 Intent(
                     holder.itemView.context,
                     CommentActivity::class.java
+                )
+            )
+        }
+
+        holder.itemView.postIv.setOnClickListener {
+            holder.itemView.context.startActivity(
+                Intent(
+                    holder.itemView.context,
+                    PostDetailActivity::class.java
                 )
             )
         }
